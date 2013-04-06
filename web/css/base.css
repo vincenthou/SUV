@@ -1,0 +1,227 @@
+/*basic*/
+a {
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+input[type="text"], input[type="password"] {
+    padding: .5em 4em;
+    width: 80%;
+    height: 3em;
+}
+
+input[type="submit"] {
+    padding: .8em 2em;
+    border-radius: .5em;
+    border: 1px solid #5EA7DE;
+    background: #55BAEF;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+/*layout*/
+.main-gradient {
+    background-color: #404040;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#404040), to(#E6E6E6));
+    background-image: -webkit-linear-gradient(top, #404040, #E6E6E6);
+    background-image:    -moz-linear-gradient(top, #404040, #E6E6E6);
+    background-image:      -o-linear-gradient(top, #404040, #E6E6E6);
+    background-image:         linear-gradient(to bottom, #404040, #E6E6E6);
+}
+
+#content {    
+    background: #979797;
+}
+
+.wrapper {
+    width: 80%;
+    padding: 20px 0;
+    margin: 0 auto;
+    background: white;
+}
+
+footer {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.atl {
+    position: absolute;
+    left: 1em;
+    top: 1em;
+}
+
+.offset40 {
+    margin-left: 40%;
+}
+
+/*components*/
+
+/*logo*/
+.logo {
+    height: 50px;
+    font-size: 50px;
+    padding: 10px;
+    padding-left: 30px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 5px 5px 0 #666, 7px 7px 0 #eee;
+}
+
+/*nav*/
+nav {
+    width: 400px;
+    height: 40px;    
+}
+
+.nav {
+    height: 100%;
+}
+
+.nav li {
+    float: left;
+    width: 20%;
+    height: 100%;    
+    text-align: center;
+    margin-right: 5%;
+}
+
+.nav li a {
+    display: block;
+    color: white;
+    height: 100%;
+    line-height: 200%;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 3px #000;
+}
+
+.nav li a:hover {
+    color: #000;
+}
+
+/*buttons*/
+#login-btn {
+    position: absolute;
+    top: 2em;
+    right: -2em;
+    padding: 1em;
+    background: black;
+    font-size: .5em;
+    color: white;
+    -webkit-transition: right .5s ease-in-out;
+}
+
+#login-btn:hover {
+    right: 0;
+    cursor: pointer;
+}
+
+/*slider*/
+.slider-wrapper {
+    position: relative;
+    width: 42em;
+    height: 28em;
+    margin: 0 auto;
+    padding: 2% 8%;
+    box-shadow: 3px 3px 10px black;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
+}
+
+.slider-btn {
+    display: inline-block;
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    top: 50%;    
+}
+
+.slider-btn:hover {
+    cursor: pointer;
+}
+
+.prev-btn {    
+    left: 10px;
+    background: url('../images/icons/slider_prev.png');
+}
+
+.next-btn {
+    right: 10px;
+    background: url('../images/icons/slider_next.png');   
+}
+
+/*new list*/
+.news {
+    margin: 2em auto;
+    width: 52em;
+}
+
+.new-item {
+    background: #C0C0C0;
+}
+
+.new-header {
+    height: 20px;
+    padding: 1em;
+}
+
+.new-title {
+    background: 
+}
+
+.new-content {
+    border-top: 1px solid white;
+    padding: 1em;
+    text-indent: 2em;
+    width: 100%;
+}
+
+/*login form*/
+.background {
+    width: 100%;
+    height: 443px;
+    padding-top: 15em;
+    background-image: url('../images/background/default_login_1.jpg');
+    background-position: 0px -200px;
+}
+
+.login-wrapper {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.moto {
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+    text-shadow:  0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de;
+}
+
+.row {
+    margin-bottom: .5em;
+    text-align: left;
+}
