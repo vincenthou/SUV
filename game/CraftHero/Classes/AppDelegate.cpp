@@ -42,7 +42,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     // create a scene. it's an autorelease object
    // CCScene *pScene = HelloWorld::scene();
 
-	SimpleAudioEngine::sharedEngine()->playBackgroundMusic("music.mid",true);
+	//SimpleAudioEngine::sharedEngine()->playBackgroundMusic("music.mid",true);
 
     // run
     //pDirector->runWithScene(pScene);
