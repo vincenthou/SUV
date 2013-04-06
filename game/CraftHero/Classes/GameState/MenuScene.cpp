@@ -1,5 +1,7 @@
 #include "MenuScene.h"
 
+using namespace cocos2d;
+
 namespace NS_SUV{
 
 	const int MMENULAYER_Z_ORDER = 10;
@@ -14,20 +16,7 @@ namespace NS_SUV{
 
 	bool CMenuLayer::init(){
 
-		CCMenuItemImage *pCloseItem = CCMenuItemImage::create(
-			"CloseNormal.png",
-			"CloseSelected.png",
-			this,
-			menu_selector(CMenuLayer::menuCloseCallback));
-
-		pCloseItem->setPosition(ccp(CCDirector::sharedDirector()->getWinSize().width - 20, 20));
-
-		CCMenu* pMenu = CCMenu::create(pCloseItem, NULL);
-		pMenu->setPosition(CCPointZero);
-
-		this->addChild(pMenu, 1);
-
-		CCLabelTTF* pLabel = CCLabelTTF::create("SUV", "Arial", 24);
+		CCLabelTTF* pLabel = CCLabelTTF::create("CraftHero", "Arial", 30);
 
 		CCSize size = CCDirector::sharedDirector()->getWinSize();
 		pLabel->setPosition(ccp(size.width / 2, size.height - 50));
@@ -39,16 +28,42 @@ namespace NS_SUV{
 
 		this->addChild(pSprite, 0);
 
+		CCMenuItemFont::setFontName("Arial");
+		CCMenuItemFont::setFontSize(25);
+		CCMenuItemFont *newGame = CCMenuItemFont::itemWithString("New Game", this,menu_selector(CMenuLayer::gameNew) );
+		CCMenuItemFont *loading = CCMenuItemFont::itemWithString("Loading", this,menu_selector(CMenuLayer::gameLoad) );
+		CCMenuItemFont *option = CCMenuItemFont::itemWithString("Option", this,menu_selector(CMenuLayer::gameSetting) );
+		CCMenuItemFont *quit = CCMenuItemFont::itemWithString("Quit", this,menu_selector(CMenuLayer::gameQuit) );
+
+		CCMenu *menu = CCMenu::menuWithItems(newGame,loading,option,quit,NULL);
+		menu->alignItemsVertically();
+		this->addChild(menu, 1, 2);
+
 		return true;
 	}
 
-	void CMenuLayer::menuCloseCallback(CCObject* pSender){
+	void CMenuLayer::gameNew(CCObject* pSender)
+	{
+
+	}
+
+	void CMenuLayer::gameSetting(CCObject* pSender)
+	{
+
+	}
+	void CMenuLayer::gameLoad(CCObject* pSender)
+	{
+
+	}
+	void CMenuLayer::gameQuit(CCObject* pSender)
+	{
 		CCDirector::sharedDirector()->end();
 	}
 
 	/*Layer end*/
 
 	CMenuScene::CMenuScene(){
+
 		CMenuLayer *mMenuLayer = new CMenuLayer();
 		mMenuLayer->setPosition(ccp(0, 0));
 		this->addChild(mMenuLayer, MMENULAYER_Z_ORDER);

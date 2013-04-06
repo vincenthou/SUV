@@ -28,6 +28,7 @@ namespace NS_SUV{
 	{
 		mLoadingScene = new CLoadingScene(); 
 		mMenuScene = new CMenuScene();
+		mGameScene = new CGameScene();
 		return true;
 	}
 
@@ -43,13 +44,15 @@ namespace NS_SUV{
 				break;
 			case STATE_MENU:
 				mLoadingScene->release();
-				CCDirector::sharedDirector()->replaceScene(mMenuScene);
+				//CCTransitionFade* transitionScene = CCTransitionFade::transitionWithDuration(1.2f, mMenuScene);
+				CCDirector::sharedDirector()->replaceScene(CCTransitionFade::create(1.2f, mMenuScene));
 				mCurrentState = STATE_MENU;
 				break;
 			case STATE_MAIN:
 				mCurrentState = STATE_MAIN;
 				break;
 			case STATE_GAME:
+				CCDirector::sharedDirector()->replaceScene(mGameScene);
 				mCurrentState = STATE_GAME;
 				break;
 			case STATE_OVER:

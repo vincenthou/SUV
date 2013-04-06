@@ -4,6 +4,7 @@
 #include "cocos2d.h"
 #include "GameState/LoadingScene.h"
 #include "GameState/MenuScene.h"
+#include "GameState/GameScene.h"
 
 using namespace cocos2d;
 namespace NS_SUV{
@@ -25,6 +26,7 @@ namespace NS_SUV{
 	private:
 		CLoadingScene*		mLoadingScene;
 		CMenuScene*			mMenuScene;
+		CGameScene*			mGameScene;
 
 		int					mCurrentState;
 

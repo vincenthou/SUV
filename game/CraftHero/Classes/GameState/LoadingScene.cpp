@@ -49,13 +49,7 @@ namespace NS_SUV{
 	void CLoadingScene::updateGame(float dt){
 		fTime+=dt;
 
-		if (fTime>=1.0f)
-		{
-			nOpacity-=3; 
-			mLoadingLayer->pLogo->setOpacity(nOpacity);
-		}
-		
-		if(fTime>=2.5f)
+		if(fTime>=1.0f)
 			GameMgr->ChangeGameState(STATE_MENU);
 	}
 

@@ -15,6 +15,10 @@ namespace NS_SUV{
 
 		bool			init();
 		void			menuCloseCallback(CCObject* pSender);
+		void			gameNew(CCObject* pSender);
+		void			gameLoad(CCObject* pSender);
+		void			gameSetting(CCObject* pSender);
+		void			gameQuit(CCObject* pSender);
 
 	};
 
