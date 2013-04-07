@@ -12,7 +12,7 @@ namespace NS_SUV{
 		Hero();
 		~Hero();
 		virtual bool Initialize();
-		virtual bool Update();
+		virtual bool Update(float dt);
 		
 		/*player fresh*/
 		virtual void ReLoad();
@@ -41,4 +41,4 @@ namespace NS_SUV{
 
 }
 
-#endif  // __HELLOWORLD_SCENE_H__
+#endif
