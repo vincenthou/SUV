@@ -13,7 +13,7 @@ namespace NS_SUV{
 
 		mRunAnimate = NULL;
 		mStandAnimate = NULL;
-
+/*
 		mRunAnimate = CCAnimation::create(); 
 		mStandAnimate = CCAnimation::create(); 
 
@@ -22,7 +22,12 @@ namespace NS_SUV{
 
 		CCSpriteFrameCache* cache = 
 			CCSpriteFrameCache::sharedSpriteFrameCache();
-
+*/
+		return true;
+	}
+	bool CPlayer::Update(float dt)
+	{
+		return true;
 	}
 }
 

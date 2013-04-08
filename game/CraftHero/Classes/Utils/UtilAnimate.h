@@ -14,7 +14,7 @@ namespace NS_SUV{
 		CUtilAnimate(const char *pszFileName,float frameTime);
 		~CUtilAnimate();
 
-		CCAnimation*		runUp();
+		CCAnimate*			runUp();
 		CCAnimation*		runDown();
 		CCAnimation*		runRight();
 		CCAnimation*		runLeft();
@@ -24,8 +24,12 @@ namespace NS_SUV{
 		CCSprite*			idleRight();
 		CCSprite*			idleLeft();
 		CCSprite*			idleHert();
+
+
+		CCSprite*			GetHero();
+		CCSprite*			mHero;
 	private:
-		const char*			pngFileName;
+		char*				pngFileName;
 		float				fFrameTime;
 	
 

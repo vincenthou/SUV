@@ -1,7 +1,8 @@
 #ifndef __PLAYER_H_
 #define __PLAYER_H_
 
-#include "coco2d.h"
+#include "cocos2d.h"
+#include "Hero.h"
 using namespace cocos2d;
 
 namespace NS_SUV{

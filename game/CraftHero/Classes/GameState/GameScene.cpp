@@ -9,6 +9,6 @@ namespace NS_SUV{
 
 	}
 	bool CGameScene::init(){
-
+		return true;
 	}
 }

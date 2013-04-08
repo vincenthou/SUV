@@ -9,8 +9,8 @@ namespace NS_SUV{
 	class CHero
 	{
 	public:
-		Hero();
-		~Hero();
+		CHero();
+		~CHero();
 		virtual bool Initialize();
 		virtual bool Update(float dt);
 		
