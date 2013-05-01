@@ -13,7 +13,7 @@ $this->pageTitle=Yii::app()->name;
         </div>
     </div>    
     <ul class="news">
-        <li class="new-item">
+        <li class="new-item" data-id="1">
             <div class="new-header">
                 <h2 class="new-title">Title</h2>
             </div>            

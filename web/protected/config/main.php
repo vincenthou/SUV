@@ -26,8 +26,7 @@ return array(
 			'password'=>'11',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			//'ipFilters'=>array('127.0.0.1','::1'),
-		),
-		
+		),		
 	),
 
 	// application components
@@ -70,7 +69,7 @@ return array(
 			'routes'=>array(
 				array(
 					'class'=>'CFileLogRoute',
-					'levels'=>'error, warning',
+					'levels'=>'info',
 				),
 				// uncomment the following to show log messages on web pages
 				/*

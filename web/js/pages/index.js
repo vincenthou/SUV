@@ -2,6 +2,7 @@
     var index = {};
     index.init = function() {
         this.initSlider();
+        this.bindHandlers();
     };
 
     index.initSlider = function() {
@@ -16,7 +17,9 @@
     };
 
     index.bindHandlers = function() {
-        
+        $('.new-item').click(function(){
+            window.location.href = SUV.path.POST_PATH + $(this).attr('data-id');
+        });
     };
 
     if ('undefined' === typeof(SUV)) {
